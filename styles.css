@@ -25,11 +25,22 @@ body {
   color: hsl(30, 10%, 34%);
 }
 
+
+
 img {
-  max-width: 375px;
-  border-radius: 0.5rem;
+  /*max-width: 375px;*/
+  max-width: 100%;
+  /*object-fit: contain;*/
 }
 
+@media screen and (min-width: 500px) {
+  img {
+    border-radius: 0.5rem;
+  }
+  .image-container {
+    padding: 2rem;
+  }
+}
 h1 {
   font-family: "Young Serif";
   font-weight: 400;
